@@ -19,8 +19,13 @@
 # This function provides the following 4 methods to interact with this matrix:
 # 1. set -- To set the value of the matrix
 # 2. get -- Get the current value of the matrix
-# 3. setsolve -- 
+# 3. setsolve -- Sets the matrix inverse to a value given by the user
+# 4. getsolve -- Gets the current value of the inverse of the matrix
 
+#Arguments:
+# 1. x -- Any square invertible matrix.
+#Returns:
+# The special matrix which is essentially a list with the above 4 methods.
 
 makeCacheMatrix <- function(x = matrix()) {
         mat_inv<- NULL
